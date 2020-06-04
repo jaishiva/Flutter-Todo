@@ -43,7 +43,7 @@ class _homeState extends State<home> {
   Widget build(BuildContext context) {
     return spinner?Center(child: CircularProgressIndicator(),) :Scaffold(
       
-    backgroundColor:  _currentIndex==0?backgroundColor: _currentIndex==1?kBrightOrange:kBlack,
+    backgroundColor:  _currentIndex==0?backgroundColor:kBrightOrange,
     body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(top:10.0,left: 10,right: 10),
@@ -56,7 +56,7 @@ class _homeState extends State<home> {
         BottomNavigationBarItem(icon: Icon(Icons.panorama_fish_eye),title: Text(''))
       ],
       iconSize: 30,
-      backgroundColor:  _currentIndex==0?Colors.white: _currentIndex==1?kBrightOrange:kBlack,
+      backgroundColor: Colors.white,
       selectedFontSize: 0,
       unselectedFontSize: 0,
       currentIndex: _currentIndex,

@@ -69,6 +69,21 @@ class TaskDataProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<int> getTotalTasks() async{
+    List<Map> data = await db.getTotalTasks();
+    if(data.length == 0){
+      return 0;
+    }
+    return data[0]['total'];
+  }
+  Future<int> getCompleteTasks() async{
+    List<Map> data = await db.getCompleteTasks();
+    if(data.length == 0){
+      return 0;
+    }
+    return data[0]['total'];
+  }
+
 }
 
 class DBProvider {
@@ -141,4 +156,16 @@ class DBProvider {
     final db = await database;
     return await db.rawQuery('SELECT status FROM task WHERE id = ?',[id]);
   }
+
+  Future<List<Map>> getTotalTasks() async{
+    final db = await database;
+    return await db.rawQuery('SELECT COUNT(*) as total FROM task WHERE true');
+  }
+
+
+  Future<List<Map>> getCompleteTasks() async{
+    final db = await database;
+    return await db.rawQuery('SELECT COUNT(*) as total FROM task WHERE status = 1');
+  }
+
 }
