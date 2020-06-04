@@ -78,9 +78,9 @@ class TaskDataProvider extends ChangeNotifier {
   }
   Future<int> getCompleteTasks() async{
     List<Map> data = await db.getCompleteTasks();
-    if(data.length == 0){
-      return 0;
-    }
+    // if(data.length == 0){
+    //   return 0;
+    // }
     return data[0]['total'];
   }
 
