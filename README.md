@@ -1,16 +1,14 @@
 # todoo
 
-A new Flutter project.
+A simple todo app that uses SQLite database
 
-## Getting Started
+## Home page
+<img src="https://github.com/jaishiva/Flutter-Todo/blob/master/outputs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-09-22%20at%2010.48.54.png" width="300" height="800">                                              <img src="https://github.com/jaishiva/Flutter-Todo/blob/master/outputs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-09-22%20at%2010.49.03.png" width="300" height="800">
 
-This project is a starting point for a Flutter application.
+## Add Task Page
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://github.com/jaishiva/Flutter-Todo/blob/master/outputs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-09-22%20at%2010.49.09.png" width="300" height="800">
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Dashboard
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/jaishiva/Flutter-Todo/blob/master/outputs/Simulator%20Screen%20Shot%20-%20iPhone%2011%20-%202020-09-22%20at%2010.49.13.png" width="300" height="800">
