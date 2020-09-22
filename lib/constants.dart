@@ -1,6 +1,5 @@
 
 import 'package:flutter/material.dart';
-import 'package:calendar_strip/calendar_strip.dart';
 import 'package:todoo/model/taskDataProvider.dart';
 const TextStyle dateStyle = TextStyle(
   color: Colors.white,
